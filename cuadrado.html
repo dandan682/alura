@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cuadrado</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        canvas {
+            border: 5px solid royalblue;
+            background:khaki ;
+        }
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas >
+        THIS IS CANVAS!!
+    </canvas>
+     <script>
+        function dibujarCuadrado(x, y, color) {
+            pincel.fillStyle = color;
+            pincel.fillRect(x, y, 50, 50);
+            pincel.strokeStyle = "black";
+            pincel.strokeRect(x, y, 50, 50);
+        }
+
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pantalla.width = window.innerWidth;
+        pantalla.height = window.innerHeight;
+
+        dibujarCuadrado(0, 0, "red");
+        dibujarCuadrado(0, 50, "yellow");
+        dibujarCuadrado(0, 100, "green");
+        dibujarCuadrado(0, 150, "blue");
+    </script>
+</body>
+</html>
