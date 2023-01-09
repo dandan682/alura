@@ -6,6 +6,5 @@ public class EjemploCaracteres {
         System.out.println(caracter);
         caracter = 65 + 1;
         System.out.println(caracter);
-        
     }
 }
