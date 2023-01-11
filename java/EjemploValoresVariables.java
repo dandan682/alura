@@ -5,6 +5,5 @@ public class EjemploValoresVariables {
         System.out.println(numero2);
         numero2 = numero1;
         System.out.println(numero2);
-        
     }
 }
