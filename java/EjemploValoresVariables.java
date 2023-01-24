@@ -6,5 +6,6 @@ public class EjemploValoresVariables {
         numero2 = numero1;
         System.out.println(numero2);
 
+
     }
 }
